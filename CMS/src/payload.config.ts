@@ -10,6 +10,8 @@ import { s3Adapter } from '@payloadcms/plugin-cloud-storage/s3'
 
 import Users from './collections/Users'
 import Media from './collections/Media'
+import Header from './globals/header'
+import Footer from './globals/footer'
 import { Pages } from './collections/Pages'
 
 export default buildConfig({
@@ -22,6 +24,10 @@ export default buildConfig({
     Users,
     Media,
     Pages,
+  ],
+  globals: [
+    Header,
+    Footer,
   ],
   typescript: {
     outputFile: path.resolve(__dirname, 'payload-types.ts'),
