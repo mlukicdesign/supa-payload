@@ -10,8 +10,8 @@ import { s3Adapter } from '@payloadcms/plugin-cloud-storage/s3'
 
 import Users from './collections/Users'
 import Media from './collections/Media'
-import Header from './globals/header'
-import Footer from './globals/footer'
+import Header from './globals/Header'
+import Footer from './globals/Footer'
 import { Pages } from './collections/Pages'
 
 export default buildConfig({

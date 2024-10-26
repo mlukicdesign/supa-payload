@@ -4,18 +4,31 @@ const Header: GlobalConfig = {
   slug: 'header',
   fields: [
     {
-      name: 'title',
-      label: 'Title',
-      type: 'text',
-      required: true,
-    },
-    {
       name: 'logo',
       label: 'Logo',
       type: 'upload',
       relationTo: 'media',
       required: true,
     },
+    {
+      name: 'nav',
+      label: 'Navigation',
+      type: 'array',
+      fields: [
+        {
+          name: 'label',
+          label: 'Label',
+          type: 'text',
+          required: true,
+        },
+        {
+          name: 'link',
+          label: 'Link',
+          type: 'text',
+          required: true,
+        },
+      ]
+    }
   ],
 };
 
